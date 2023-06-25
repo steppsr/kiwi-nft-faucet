@@ -3,6 +3,8 @@ A memorial, commemorative NFT faucet for Kiwi, aka David Hamish Speirs, a true C
 
 ---
 
+![Kiwi Faucet Design](public_html/assets/KiwiFaucetWorkflow.png)
+
 ## Front End
 
 ___PHP___
