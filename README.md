@@ -16,15 +16,16 @@ ___PHP___
 ___Javascript___
 | File | Description |
 | --- | --- |
-- kiwi.js : 49 lines total, 15 lines are comments/whitespace. This handles setting the visibility of elements on the page, and submitting the Google reCAPTCHA.
+| kiwi.js | 49 lines total, 15 lines are comments/whitespace. This handles setting the visibility of elements on the page, and submitting the Google reCAPTCHA. |
 
 ___CSS___
 | File | Description |
 | --- | --- |
-- kiwi.css : 107 lines total, 14 lines are whitespace. Format, Layout, and Style.
+| kiwi.css | 107 lines total, 14 lines are whitespace. Format, Layout, and Style. |
 
 __Approximately, 154 lines of actual code, 93 lines of CSS.__
 
+---
 
 ## Back End
 
@@ -67,6 +68,10 @@ Example:
 
 	2023-06-20T01:02:00+00:00,xch1h8px4kmx9mrwsdak094dfs05rwydjrs42m3a8llafyyv278qymxsyzams8
 
+---
+
+## Faucet Service
+
 Faucet Service Pseudocode - this is an intentional endless loop
 
 	WHILE true
@@ -77,13 +82,8 @@ Faucet Service Pseudocode - this is an intentional endless loop
 			log transaction
 		ELSE
 			get all submissions
-			FOR item IN submissions
-				parse time_stamp, address
-				unit = first 3 characters of address
-				valid = number of times address is found in history
-				IF unit = 'xch' AND address = 62 characters AND valid = 0 THEN
-					add address & timestamp to the queue
-				END IF
+			FOR EACH item IN submissions
+				add item to queue
 			LOOP
 			empty submissions file
 		ENDIF
