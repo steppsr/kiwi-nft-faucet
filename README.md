@@ -153,6 +153,10 @@ Then add the following:
 0,5,10,15,20,25,30,35,40,45,50,55 * * * * bash /var/www/kiwifaucet.site/public_html/scripts/stats.sh html
 ```
 
+## Current Known Issues
+* The nft_move.sh script has an issue when ran from `crontab`. For now, I have been running it manually when I notice there are Kiwi NFTs in the Unassigned wallet. I check for these by manually running the following command: `bash stats.sh` from within the scripts folder.
+* You need to make sure you have enough coins on hand. The `bash stats.sh` command in the scripts folder will include the number of coins in the stats results, but if it's low, you will need to split some coins. I use the CLI command `chia wallet coins split` to do the split.
+
 ---
 
 ___kiwifaucet.site is a community-based initiative, independently operated, and is not associated with, nor maintained by Chia Network Inc.___
