@@ -33,6 +33,8 @@ __Approximately, 154 lines of actual code, 93 lines of CSS.__
 
 ## Back End
 
+The code for the Back End can be found in the scripts folder.
+
 ___Crontab Jobs___
 | File | Description |
 | --- | --- |
