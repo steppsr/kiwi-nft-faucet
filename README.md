@@ -146,3 +146,7 @@ Then add the following:
 0,5,10,15,20,25,30,35,40,45,50,55 * * * * bash /var/www/kiwifaucet.site/public_html/scripts/nft_move.sh col14rl3mpxfxr6acdnzlu466shl9s8ljr9cm9ujar80j5rld2y8lf5qx36yqf 2
 0,5,10,15,20,25,30,35,40,45,50,55 * * * * bash /var/www/kiwifaucet.site/public_html/scripts/stats.sh html
 ```
+
+---
+
+___kiwifaucet.site is a community-based initiative, independently operated, and is not associated with, nor maintained by Chia Network Inc.___
