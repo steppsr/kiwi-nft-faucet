@@ -13,21 +13,19 @@ ___PHP___
 
 | File | Description |
 | --- | --- |
-| index.php | This is the main home page for the site. <br>_67 lines total, 15 lines are comments/whitespace._|
-| submit.php |  This is the page to process each submission and provide feedback to the user before redirecting back to the home page. <br>_85 lines total, 17 lines are comments/whitespace._|
-|stats.php | This is a dynamic HTML block that gets included in the `index.php` page and is derived from the Back End. <br>_0 lines._|
+| index.php | This is the main home page for the site. |
+| submit.php |  This is the page to process each submission and provide feedback to the user before redirecting back to the home page. |
+|stats.php | This is a dynamic HTML block that gets included in the `index.php` page and is derived from the Back End. |
 
 ___Javascript___
 | File | Description |
 | --- | --- |
-| kiwi.js | 49 lines total, 15 lines are comments/whitespace. This handles setting the visibility of elements on the page, and submitting the Google reCAPTCHA. |
+| kiwi.js | This handles setting the visibility of elements on the page, and submitting the Google reCAPTCHA. |
 
 ___CSS___
 | File | Description |
 | --- | --- |
-| kiwi.css | 107 lines total, 14 lines are whitespace. Format, Layout, and Style. |
-
-__Approximately, 154 lines of actual code, 93 lines of CSS.__
+| kiwi.css | Format, Layout, and Style. |
 
 ---
 
@@ -38,22 +36,20 @@ The code for the Back End can be found in the scripts folder.
 ___Crontab Jobs___
 | File | Description |
 | --- | --- |
-| nft_move.sh | Will move any Kiwi NFTs in the Unassigned wallet_id to the DID wallet_id. Will only move NFTs in the Kiwi collection. <br>_116 lines, 38 lines are comments/whitespace._|
-| stats.sh | Will calculate the stats and write to a PHP file that is included in the `index.php` page. <br>_33 lines, 5 lines are whitespace._|
+| nft_move.sh | Will move any Kiwi NFTs in the Unassigned wallet_id to the DID wallet_id. Will only move NFTs in the Kiwi collection. |
+| stats.sh | Will calculate the stats and write to a PHP file that is included in the `index.php` page. |
 
 ___Systemd Services___
 | File | Description |
 | --- | --- |
-| kiwifaucet.service.sh | <br>_56 lines, 18 are comments/whitespace._ |
-| get_requests.sh | Gets the requests from the website and puts them into the `queue.csv` file. <br>_29 lines, 13 are comments/whitespace._ |
+| kiwifaucet.service.sh | This is the service engine script that continuously loops to check for new requests and send NFTs. |
+| get_requests.sh | Gets the requests from the website and puts them into the `queue.csv` file. |
 
 ___Maintenace Scripts___
 | File | Description |
 | --- | --- |
-| nft_count.sh | <br>_13 lines, 6 lines are comments/whitespace._|
-| take_offers.sh | <br>_81 lines, 27 are comments/whitespace._|
-
-__Approximately, 221 lines of actual code.__
+| nft_count.sh | Will output the number of NFTs in a given wallet. |
+| take_offers.sh | Bot to take offers if you have multiple offer files. |
 
 ___CSV Files___
 | File | Description |
